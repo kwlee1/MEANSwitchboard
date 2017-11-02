@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  switches = ['off','off','off','off','off','off','off','off','off','off']
+  switch(idx){
+    if(this.switches[idx]==='off'){
+      this.switches[idx] = 'on'; 
+    }
+    else if(this.switches[idx]==='on'){
+      this.switches[idx] = 'off';  
+    }
+  }
 }

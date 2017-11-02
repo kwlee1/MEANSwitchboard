@@ -1,1 +1,7 @@
 <h1>Switchboard</h1>
+<button 
+  *ngFor="let x of switches; let i = index" 
+  (click)="switch(i)" 
+  [ngClass]="{'on':switches[i]==='on','off':switches[i]==='off'}">
+  {{switches[i]}}
+</button>
